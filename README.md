@@ -4,6 +4,8 @@ Simple MERN app that allows user add an event to database.
 
 ### Getting started
 
+Firstly use `npm install` to install packages required to run the app.
+
 Use `npm start` to start the server and build front-end app.
 
 Make sure you have MongoDB server running at your local machine.
