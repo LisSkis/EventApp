@@ -39754,6 +39754,8 @@ var AddEvent = function (_Component) {
                 response = _context.sent;
 
 
+                console.log(response);
+
                 this.setState({
                   firstName: '',
                   lastName: '',
@@ -39761,8 +39763,7 @@ var AddEvent = function (_Component) {
                   eventDate: '',
                   modalMessage: response.data.message
                 });
-                openModal();
-                _context.next = 15;
+                _context.next = 14;
                 break;
 
               case 11:
@@ -39772,6 +39773,8 @@ var AddEvent = function (_Component) {
                 this.setState({
                   modalMessage: _context.t0.response.data.message
                 });
+
+              case 14:
                 openModal();
 
               case 15:

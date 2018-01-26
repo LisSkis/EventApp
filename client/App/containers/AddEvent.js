@@ -47,13 +47,16 @@ class AddEvent extends Component {
     const { openModal } = this.props.actions;
     const eventBody = _.pick(this.state, ['firstName', 'lastName', 'email', 'eventDate']);
 
+
     try {
       const response = await axios.post('/', querystring.stringify(eventBody), {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         }
       });
-
+  
+      console.log(response);
+  
       this.setState({
         firstName: '',
         lastName: '',
@@ -61,13 +64,12 @@ class AddEvent extends Component {
         eventDate: '',
         modalMessage: response.data.message,
       });
-      openModal();
     } catch(e) {
       this.setState({
         modalMessage: e.response.data.message,
       });
-      openModal();
     }
+    openModal();
   }
 
   render() {
