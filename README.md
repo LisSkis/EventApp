@@ -12,5 +12,4 @@ Default mongo url is `mongodb://localhost:27017/event-app`. You can change url i
 
  ### Testing
 
- To start tests you can run `npm run test` command or `npm run test-watch` to run tests and watch for changes in tests.
- 
+ To start tests run `npm run test` command or `npm run test-watch` to run tests and watch for changes in tests.
